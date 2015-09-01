@@ -11,6 +11,10 @@ angular.module('rstcApp')
         templateUrl: 'app/account/signup/signup.html',
         controller: 'SignupCtrl'
       })
+      .when('/x', {
+        templateUrl: 'app/account/x/x.html',
+        controller: 'XCtrl'
+      })
       .when('/settings', {
         templateUrl: 'app/account/settings/settings.html',
         controller: 'SettingsCtrl',

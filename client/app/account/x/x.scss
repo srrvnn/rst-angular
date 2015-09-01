@@ -19,28 +19,7 @@ $btnGithubBackgroundHighlight:      #ccc;
   @include button-variant($btnTextAlt, $btnGithubBackground, $btnGithubBackgroundHighlight);
 }
 
-.login-splash h2 {
+.login-splash p {
   margin: 30px 50px;
-  padding: 20px 0;
-  border-bottom: 1px solid black;
-  text-align: center;
-  font-size: 50px;
-  font-family: 'Shadows Into Light', cursive;
-}
-
-.login-splash div {
-  text-align: center;
-}
-
-.login-splash img {
-  border-radius: 50px;
-}
-
-.login-splash a {
-  margin: 10px 0;
-  font-size: 20px;
-}
-
-.login-splash i {
-  margin-right: 10px;
+  line-height: 40px;
 }
