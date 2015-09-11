@@ -17,11 +17,20 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
     padding: 0.2em 0;
 }
 
+* {
+  font-family: 'Cabin', sans-serif;
+}
+
+$mint : #50ca92;
+$pink : #ff69b4;
+
 // Component styles are injected through grunt
 // injector
 @import 'account/login/login.scss';
 @import 'account/x/x.scss';
 @import 'admin/admin.scss';
 @import 'main/main.scss';
+@import 'footer/footer.scss';
 @import 'modal/modal.scss';
+@import 'navbar/navbar.scss';
 // endinjector

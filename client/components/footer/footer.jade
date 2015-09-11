@@ -1,0 +1,9 @@
+footer.footer(ng-controller='FooterCtrl')
+  .container
+    p
+      = ' Built with <3 for Amma by '
+      a(href='https://twitter.com/srrvnn') @srrvnn
+      = ' | '
+      a(href='https://github.com/srrvnn/rstc/issues?state=open') Issues
+      span(ng-show='isLoggedIn()')&nbsp;|&nbsp;
+      a(href='', ng-show='isLoggedIn()', ng-click='logout()') Logout

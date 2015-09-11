@@ -8,7 +8,7 @@ exports.setup = function (User, config) {
       clientID: config.facebook.clientID,
       clientSecret: config.facebook.clientSecret,
       callbackURL: config.facebook.callbackURL,
-      profileFields: ['id', 'email', 'gender', 'link', 'locale', 'name', 'timezone', 'updated_time', 'verified'],
+      profileFields: ['id', 'email', 'gender', 'link', 'locale', 'name', 'timezone', 'updated_time', 'verified', 'photos'],
 
     },
     function(accessToken, refreshToken, profile, done) {
@@ -24,6 +24,7 @@ exports.setup = function (User, config) {
           user = new User({
             name: profile.displayName,
             email: profile.emails[0].value,
+            picture: profile.photos ? profile.photos[0].value : '/assets/images/user.jpg',
             role: 'user',
             username: profile.username,
             provider: 'facebook',

@@ -32,3 +32,26 @@
 .navbar-text {
   margin-left: 15px;
 }
+
+.tabs {
+  list-style: none;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.tabs li {
+  display: inline-block;
+  width: 120px;
+  margin: 50px;
+}
+
+.tabs li img {
+  border-radius: 40px;
+}
+
+.tabs li p {
+  margin: 25px auto;
+  text-align: center;
+  font-size: 20px;
+}

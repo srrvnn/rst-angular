@@ -2,6 +2,15 @@
 
 angular.module('rstcApp')
   .controller('MainCtrl', function ($scope, $http, socket) {
+
+    $scope.tabs = [
+      {'title' : 'Students', 'link': '/students'},
+      {'title' : 'Attendance', 'link': '/attendance'},
+      {'title' : 'Questions', 'link': '/questions'},
+      {'title' : 'Tests', 'link': '/tests'},
+      {'title' : 'Fees', 'link': '/fees'},
+    ];
+
     $scope.awesomeThings = [];
 
     $http.get('/api/things').success(function(awesomeThings) {

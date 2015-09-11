@@ -1,11 +1,12 @@
 div(ng-include='"components/navbar/navbar.html"')
 
+div.content
 
+  ul.tabs
+    li(ng-repeat='item in tabs')
+      a(ng-href='{{item.link}}')
+        img(src="http://placehold.it/120x120")
+        p
+          {{item.title}}
 
-footer.footer
-  .container
-    p
-      = ' Built with <3 for R.S.L. by '
-      a(href='https://twitter.com/srrvnn') @srrvnn
-      = ' | '
-      a(href='https://github.com/srrvnn/rstc/issues?state=open') Issues
+div(ng-include='"components/footer/footer.html"')
